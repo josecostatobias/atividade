@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using System;
-using System.Globalization;
+﻿
 
 /* atividade 1
  * 
@@ -15,7 +12,7 @@ class program
         double x;
         x = 2.3456;
         console.writeline(x.tostring("f5", ci));
-        console.writeline("hello, world!");
+        oi.writeline("hello, world!");
     }
 
 }
@@ -135,24 +132,25 @@ namespace Programa
 
 */
 
+using System; 
 
 namespace programa
 {
     class program
     {
-        static void main(string[] args)
+        static void Main(string[] args)
         {
             int x, soma;
             soma = 0;
-            console.write("digite o primeiro numero: ");
-            x = int.parse(console.readline());
+            Console.Write("digite o primeiro numero: ");
+            x = int.Parse(Console.ReadLine());
             while (x != 0)
             {
                 soma = soma + x;
-                console.write("digite outro numero: ");
-                x = int.parse(console.readline());
+                Console.Write("digite outro numero: ");
+                x = int.Parse(Console.ReadLine());
             }
-            console.writeline("soma = " + soma);
+            Console.WriteLine("soma = " + soma);
         }
     }
 }
